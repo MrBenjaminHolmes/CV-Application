@@ -1,14 +1,14 @@
-import { useState } from "react";
-import SidebarButton from "./SidebarButton";
-import personIcon from "./assets/person.svg";
-import schoolIcon from "./assets/school.svg";
-import workIcon from "./assets/work.svg";
-import "./App.css";
+// Sidebar.jsx
+import SidebarButton from "./sidebarButton";
+import personIcon from "../assets/person.svg";
+import schoolIcon from "../assets/school.svg";
+import workIcon from "../assets/work.svg";
+import "../styles/App.css";
 
-function Sidebar() {
-  const [activeSection, setActiveSection] = useState("");
+function Sidebar({ activeSection, setActiveSection }) {
   return (
     <div id="sideBar">
+      <h1>CV Generator</h1>
       <SidebarButton
         icon={personIcon}
         alt="Profile"
