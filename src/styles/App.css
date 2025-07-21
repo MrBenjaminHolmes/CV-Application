@@ -1,8 +1,25 @@
-#sideBar {
+.app-container {
   display: flex;
-  margin: 10px;
-  flex-direction: column;
+
+  height: 100vh;
+  width: 100vw;
 }
-#sideBar > button {
+h1 {
+  padding: 10px;
   margin: 10px;
+}
+#icons {
+  display: flex;
+  justify-content: center;
+}
+#sideBar > #icons > button {
+  margin: 10px;
+}
+#OutputContainer {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  color: black;
 }
