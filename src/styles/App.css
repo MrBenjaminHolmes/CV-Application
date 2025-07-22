@@ -12,12 +12,18 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
 #sideBar > #icons > button {
   margin: 10px;
 }
+#sideBar {
+  margin-left: 20px;
+}
+
 #OutputContainer {
   background-color: white;
   margin: 20px;
+  min-width: 600px;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;

@@ -2,6 +2,7 @@
 import SidebarButton from "./sidebarButton";
 import personIcon from "../assets/person.svg";
 import schoolIcon from "../assets/school.svg";
+import Inputs from "./Inputs";
 import workIcon from "../assets/work.svg";
 import "../styles/App.css";
 
