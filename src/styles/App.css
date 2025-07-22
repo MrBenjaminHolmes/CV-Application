@@ -1,13 +1,17 @@
 .app-container {
   display: flex;
-
   height: 100vh;
   width: 100vw;
+  background-color: #f4f4f4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
 }
+
 h1 {
   padding: 10px;
   margin: 10px;
 }
+
 #icons {
   display: flex;
   justify-content: center;
@@ -16,16 +20,103 @@ h1 {
 #sideBar > #icons > button {
   margin: 10px;
 }
+
 #sideBar {
   margin-left: 20px;
 }
 
 #OutputContainer {
-  background-color: white;
-  margin: 20px;
-  min-width: 600px;
-  padding: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
-  color: black;
+  background-color: #fff;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 40px 50px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  color: #222;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#personSection {
+  text-align: center;
+  border-bottom: 3px solid #2c3e50;
+  padding-bottom: 25px;
+  margin-bottom: 35px;
+}
+
+#personSection h2 {
+  font-size: 2.6rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #2c3e50;
+  letter-spacing: 1.1px;
+}
+
+#personSection p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #555;
+  font-size: 1.1rem;
+  margin: 6px 0;
+  font-weight: 500;
+}
+
+#personSection svg {
+  height: 20px;
+  width: 20px;
+  fill: #2980b9; /* subtle blue accent */
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #34495e;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 6px;
+  letter-spacing: 0.9px;
+}
+
+.education-item,
+.work-item {
+  background-color: #f6f9fc;
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 15px rgba(41, 128, 185, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+.education-item:hover,
+.work-item:hover {
+  box-shadow: 0 10px 20px rgba(41, 128, 185, 0.25);
+}
+
+.education-item h3,
+.work-item h3 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.education-item p,
+.work-item p {
+  margin: 0 0 10px;
+  font-style: italic;
+  color: #555;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.graduation-year {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #7f8c8d;
+  letter-spacing: 0.6px;
 }

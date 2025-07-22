@@ -34,6 +34,13 @@ function Inputs({ activeSection, handleChange, formData }) {
         <div>
           <h2>Education</h2>
           <input
+            placeholder="Degree Title"
+            value={formData.education.degree}
+            onChange={(e) =>
+              handleChange("education", "degree", e.target.value)
+            }
+          />
+          <input
             placeholder="School"
             value={formData.education.school}
             onChange={(e) =>
@@ -41,10 +48,10 @@ function Inputs({ activeSection, handleChange, formData }) {
             }
           />
           <input
-            placeholder="Degree Title"
-            value={formData.education.degree}
+            type="date"
+            value={formData.education.yearOfGraduation}
             onChange={(e) =>
-              handleChange("education", "degree", e.target.value)
+              handleChange("education", "yearOfGraduation", e.target.value)
             }
           />
         </div>
