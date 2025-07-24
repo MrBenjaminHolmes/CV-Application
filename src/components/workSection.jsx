@@ -1,14 +1,16 @@
 function WorkSection({ formData }) {
   return (
-    <section id="Work">
+    <section id="work">
       <h2>Work</h2>
-      <div className="work-item">
-        <h3>{formData.work.position}</h3>
-        <p>{formData.work.company}</p>
-        <span className="graduation-year">
-          {formData.work.startDate} - {formData.work.endDate}
-        </span>
-      </div>
+      {formData.work.map((job, index) => (
+        <div key={index} className="work-item">
+          <h3>{job.position}</h3>
+          <p>{job.company}</p>
+          <span className="employment-dates">
+            {job.startDate} – {job.endDate}
+          </span>
+        </div>
+      ))}
     </section>
   );
 }
